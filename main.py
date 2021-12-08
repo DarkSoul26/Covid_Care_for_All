@@ -1,21 +1,21 @@
-from enum import unique
+# from enum import unique
 from flask import Flask, json,redirect,render_template,flash,request
-from flask.globals import request, session
-from flask.helpers import url_for
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import UserMixin
-from werkzeug.security import generate_password_hash,check_password_hash
+# from flask.globals import request, session
+# from flask.helpers import url_for
+# from flask_sqlalchemy import SQLAlchemy
+# from flask_login import UserMixin
+# from werkzeug.security import generate_password_hash,check_password_hash
 
-from flask_login import login_required,logout_user,login_user,login_manager,LoginManager,current_user
+# from flask_login import login_required,logout_user,login_user,login_manager,LoginManager,current_user
 
-from flask_mail import Mail
-import json
+# from flask_mail import Mail
+# import json
 
 
 # connection to the database
-local_server=True
+# local_server=True
 app=Flask(__name__)
-app.secret_key="hmssanchitkalsi"
+# app.secret_key="hmssanchitkalsi"
 
 
 # with open('config.json','r') as c:

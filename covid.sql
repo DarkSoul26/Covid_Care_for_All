@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.0.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 26, 2021 at 03:47 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.29
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -43,8 +34,8 @@ CREATE TABLE `bookingpatient` (
 --
 
 INSERT INTO `bookingpatient` (`id`, `srfid`, `bedtype`, `hcode`, `spo2`, `pname`, `pphone`, `paddress`) VALUES
-(3, 'KA20210011', 'ICUBed', 'MAT123', 85, 'ARK', '9986786453', 'BANGALORE'),
-(4, 'KA20210022', 'ICUBed', 'BBH01', 92, 'kartik', '8088131784', 'banaglore ');
+(1, 'MH122021081', 'ICUBed', 'MH1201', 75, 'Sanchit', '9627948091', 'Pune'),
+(2, 'MH122021082', 'ICUBed', 'MH1210', 92, 'Sonia', '7500600090', 'Pune');
 
 -- --------------------------------------------------------
 
@@ -102,10 +93,6 @@ CREATE TABLE `hospitaluser` (
 -- Dumping data for table `hospitaluser`
 --
 
-INSERT INTO `hospitaluser` (`id`, `hcode`, `email`, `password`) VALUES
-(7, 'BBH01', 'aneesrehman95567@gmail.com', 'pbkdf2:sha256:260000$im6PllE9qrd0asQY$3e62fcb9697d2b048acd83cb3658bac8ae5edb5ff58086699d134fb0ed41d788'),
-(9, 'MAT123', 'arkprocoder@gmail.com', 'pbkdf2:sha256:260000$CPDXGkSY1zXsarEA$fdbec84d1b2c32e521c75f51bb917daaa4f7a53e567e4478d23ba944c53b1177');
-
 -- --------------------------------------------------------
 
 --
@@ -122,8 +109,8 @@ CREATE TABLE `test` (
 --
 
 INSERT INTO `test` (`id`, `name`) VALUES
-(1, 'anees'),
-(2, 'rehman');
+(1, 'Sanchit'),
+(2, 'Kalsi');
 
 -- --------------------------------------------------------
 
@@ -146,10 +133,6 @@ CREATE TABLE `trig` (
 -- Dumping data for table `trig`
 --
 
-INSERT INTO `trig` (`id`, `hcode`, `normalbed`, `hicubed`, `icubed`, `vbed`, `querys`, `date`) VALUES
-(1, 'BBH01', 50, 9, 2, 1, ' UPDATED', '2021-11-26'),
-(2, 'BBH01', 50, 9, 2, 1, ' DELETED', '2021-11-26');
-
 -- --------------------------------------------------------
 
 --
@@ -166,12 +149,8 @@ CREATE TABLE `user` (
 --
 -- Dumping data for table `user`
 --
-
-INSERT INTO `user` (`id`, `srfid`, `email`, `dob`) VALUES
-(9, 'KA20210011', 'ark@gmail.com', 'pbkdf2:sha256:260000$AhqgDCims0G1LSEi$ada839cc254cd79f9708e777ae02d83cec210677c342e01c3affd8c1358775d9'),
-(10, 'KA20210022', 'rehman@gmail.com', 'pbkdf2:sha256:260000$74GEC2qyVtOiPl5s$2a95f811bbd5a50eaac0404fb8fa3682b6c3b67f4493037134c9672393136694');
-
 --
+
 -- Indexes for dumped tables
 --
 

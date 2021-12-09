@@ -300,7 +300,7 @@ def pdetails():
     data=Bookingpatient.query.filter_by(srfid=code).first()
    
     
-    return render_template("detials.html",data=data)
+    return render_template("details.html",data=data)
 
 
 @app.route("/slotbooking",methods=['POST','GET'])

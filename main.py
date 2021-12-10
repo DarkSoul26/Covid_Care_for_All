@@ -203,7 +203,7 @@ def hospitalUser():
          
             db.engine.execute(f"INSERT INTO `hospitaluser` (`hcode`,`email`,`password`) VALUES ('{hcode}','{email}','{encpassword}') ")
            
-            mail.send_message('COVID CARE ORGANIZATION',sender=params['gmail-user'],recipients=[email],body=f"Welcome to COVID CARE, thanks for choosing us\nYour Login Credentials Are:\n Email Address: {email}\nPassword: {password}\n\nHospital Code {hcode}\n\n Do not share your password\n\n\nThank You..." )
+            mail.send_message('COVID CARE ORGANIZATION',sender=params['gmail-user'],recipients=[email],body=f"Welcome to COVID CARE FOR ALL🙏, thanks for choosing us🧑‍⚕️\nYour Login Credentials Are:\n Email Address: {email}\nPassword: {password}\n\nHospital Code: {hcode}\n\n Do not share your password🙅‍♂️\n\n\nThank You...😊🙏" )
             flash("Data Sent and Inserted Successfully","warning")
             return render_template("addHosUser.html")
     else:
@@ -368,6 +368,5 @@ def slotbooking():
     return render_template("booking.html",query=query)
 
 
-
-
+app.static_folder = 'static'
 app.run(debug=True)

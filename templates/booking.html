@@ -93,38 +93,33 @@
       </div>
     </div>
 
-
     <div class="col-md-8">
-    
-    <table class="table table-dark">
-  <thead>
-  <h3 class="text-center text-white bg-dark">Available Beds</h3>
-    <tr>
-      
-      <th scope="col">Hospital Code</th>
-      <th scope="col">Hospital Name</th>
-      <th scope="col">Normal Bed</th>
-      <th scope="col">HICU Bed</th>
-      <th scope="col">I.C.U Bed</th>
-      <th scope="col">Ventilator Bed</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% for post in query %}
-   <tr>
-      <td>{{post.hcode}}</td>
-      <td>{{post.hname}}</td>
-      <td>{{post.normalbed}}</td>
-      <td>{{post.hicubed}}</td>
-      <td>{{post.icubed}}</td>
-      <td>{{post.vbed}}</td>
-    </tr>
-   
-  {% endfor %}
-   
-  </tbody>
-</table>
-    
+      <table class="table">
+        <thead>
+          <h3 class="text-center text-white">Available Beds</h3>
+          <tr>
+            <th scope="col">Hospital Code</th>
+            <th scope="col">Hospital Name</th>
+            <th scope="col">Normal Bed</th>
+            <th scope="col">HICU Bed</th>
+            <th scope="col">I.C.U Bed</th>
+            <th scope="col">Ventilator Bed</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for post in query %}
+          <tr>
+            <td>{{post.hcode}}</td>
+            <td>{{post.hname}}</td>
+            <td>{{post.normalbed}}</td>
+            <td>{{post.hicubed}}</td>
+            <td>{{post.icubed}}</td>
+            <td>{{post.vbed}}</td>
+          </tr>
+
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

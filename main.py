@@ -101,6 +101,10 @@ class Bookingpatient(db.Model):
 def home():
     return render_template("index.html")
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 @app.route("/trigers")
 def trigers():
     query=Trig.query.all() 
@@ -361,7 +365,7 @@ def slotbooking():
             res=Bookingpatient(srfid=srfid,bedtype=bedtype,hcode=hcode,spo2=spo2,pname=pname,pphone=pphone,paddress=paddress)
             db.session.add(res)
             db.session.commit()
-            flash("Slot is Booked kindly Visit Hospital for Further Procedure","success")
+            flash("Slot is booked kindly visit the hospital for further procedure","success")
         else:
             flash("Something Went Wrong","danger")
     

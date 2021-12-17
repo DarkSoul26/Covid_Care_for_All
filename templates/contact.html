@@ -30,6 +30,7 @@
   <link href="{{ url_for('static', filename='../static/assets/css/style.css') }}" rel="stylesheet">
 
 
+
 </head>
 
 <body>
@@ -52,7 +53,7 @@
 
       <a href="/" class="logo me-auto"><img src="static/assets/img/logo.png" alt=""></a>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+      <!-- <h1 class="logo me-auto"><a href="/">Medicio</a></h1> -->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -60,24 +61,11 @@
 
           <li><a class="nav-link scrollto" href="/pdetails">Patients Details</a></li>
           <li><a class="nav-link scrollto" href="/slotbooking">Available Beds</a></li>
-          <li><a class="nav-link scrollto" href="/trigers">Operations</a></li>
 
-{% if current_user.is_authenticated  and current_user.hcode %}
+{% if current_user.is_authenticated %}
 
           <li class="dropdown"><a href="/login"><span>Welcome {{current_user.email}}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-
-              <li><a href="/addhospitalinfo">Add Hospital Data</a></li>
-              <li><a href="/logout">Logout</a></li>
-      
-           
-            </ul>
-          </li>
-{% elif current_user.is_authenticated and current_user.srfid %}
-           <li class="dropdown"><a href="/login"><span>Welcome {{current_user.email}}</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-
-              <li><a href="/slotbooking">Book Slot</a></li>
               <li><a href="/logout">Logout</a></li>
       
            
@@ -106,65 +94,85 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="container">
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(static/assets/img/slide/bg1.jpg)">
-          <div class="container">
-            <h2>Welcome to <span>Covid Care For All</span></h2>
-            <p>Covid Bed Booking System<p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>
-          </div>
+        <!-- <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(static/assets/img/slide/bg3.png)">
-          <div class="container">
-            <h2>India</h2>
-            <p>Covid Bed Booking System</p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>
-          </div>
-        </div>
-
-       
 
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div> -->
 
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
+      <div class="container">
 
-    </div>
+        <div class="row">
+
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>Ivy Estate, Wagholi, Pune, Maharashtra</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>covidcareforall@gmail.com<br>sanchitkalsi.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+91-9627948091<br>+91-7500600090</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div> -->
+          <div class="col-lg-4"></div>
+        </div>
+        
+      </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
-  {% block body %}
-  
-  
-  {% endblock body %}
 
 
-
-<footer>
-    <div class="container footer" >
-      <div class="copyright">
-        &copy; Copyright <strong><span>DarkSoul26</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-       
-        Designed by <a href=https://portfoliosk.netlify.app/">Sanchit Kalsi</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

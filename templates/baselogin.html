@@ -59,8 +59,8 @@
         <ul>
           <li><a class="nav-link scrollto " href="/">Home</a></li>
 
-          <li><a class="nav-link scrollto" href="#departments">Patients Details</a></li>
-          <li><a class="nav-link scrollto" href="#doctors">Available Beds</a></li>
+          <li><a class="nav-link scrollto" href="/pdetails">Patients Details</a></li>
+          <li><a class="nav-link scrollto" href="/slotbooking">Available Beds</a></li>
 
 {% if current_user.is_authenticated %}
 
@@ -82,12 +82,12 @@
           </li>
 
 {% endif %}
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Bed Booking Slot</span> Book Now</a>
+      <a href="/slotbooking" class="appointment-btn scrollto"><span class="d-none d-md-inline">Bed Booking Slot</span> Book Now</a>
 
     </div>
   </header><!-- End Header -->
@@ -111,10 +111,6 @@
 
           </div>
         </div>
-
-        
-       
-
       </div>
 
     </div>

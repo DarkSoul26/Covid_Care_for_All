@@ -2,6 +2,7 @@
 
 
 # Hospital-Management-System: _Covid Care for All_
+_<div align="center">A website that helps hospitals to keep data for maintaining covid bed slots on the emergency basis.</div>_
 
 ## Tech Stack
 - Frontend: _HTML, and Bootstrap_

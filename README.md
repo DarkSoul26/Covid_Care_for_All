@@ -1,7 +1,7 @@
 <div align="center"><img src="https://user-images.githubusercontent.com/60578902/146579816-eaa296f1-c401-436b-9c3c-57bcb5aece11.png" width="200" height="200"/></div>
 
-# <div align="center">💉 _Covid Care for All_ 🧑‍⚕️</div>
-## <div align="center">Hospital Management System</div>
+# <div align="center">🧑‍⚕️ _Covid Care for All_ 💉</div>
+## <div align="center">📅 Hospital Management System 📑</div>
 _<div align="center">A website that helps hospitals to keep data for maintaining covid bed slots on the emergency basis.</div>_
 
 ## Tech Stack

@@ -15,7 +15,7 @@ _<div align="center">A website that helps hospitals to keep data for maintaining
 Install with pip:
 
 ```
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Flask Configuration
